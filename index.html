@@ -105,29 +105,83 @@
         .logo {
             font-size: 1.75rem;
             font-weight: 900;
-            background: var(--flame-gradient);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
             position: relative;
             cursor: pointer;
             z-index: 1001;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            padding: 0.5rem 0.75rem;
+            background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+            color: white;
         }
-
+        .logo:hover {
+            background: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.04) 100%);
+            border-color: rgba(255,255,255,0.2);
+            transform: translateY(-1px);
+        }
+        .logo .letters-wrapper {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.85) 100%);
+            padding: 0.25rem 0.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        .logo .letter {
+            display: inline-block;
+            font-weight: 900;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        /* Adjusted colors for better visibility on white background */
+        .logo .letter-r { 
+            color: #c92626;
+            text-shadow: 0 1px 2px rgba(201,38,38,0.2);
+        }
+        .logo .letter-a1 { 
+            color: #ff8800;
+            text-shadow: 0 1px 2px rgba(255,136,0,0.2);
+        }
+        .logo .letter-f { 
+            color: #ffb300;
+            text-shadow: 0 1px 2px rgba(255,179,0,0.2);
+        }
+        .logo .letter-v { 
+            color: #0099cc;
+            text-shadow: 0 1px 2px rgba(0,153,204,0.2);
+        }
+        .logo .letter-a2 { 
+            color: #1e4ba8;
+            text-shadow: 0 1px 2px rgba(30,75,168,0.2);
+        }
+        .logo .letter-c { 
+            color: #022164;
+            text-shadow: 0 1px 2px rgba(10,31,77,0.2);
+        }
+        .logo .text-part {
+            color: var(--neutral-light);
+            font-weight: 600;
+            margin-left: 0.5rem;
+            font-size: 1.1rem;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        }
         .logo::after {
             content: '';
             position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 100%;
+            bottom: -2px;
+            left: 10%;
+            width: 80%;
             height: 2px;
-            background: var(--ice-gradient);
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
+            background: linear-gradient(90deg, transparent, var(--flame-primary) 30%, var(--ice-primary) 70%, transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
-
         .logo:hover::after {
-            transform: scaleX(1);
+            opacity: 1;
         }
 
         /* Mobile Navigation */
@@ -1385,7 +1439,10 @@
 
     <header class="header">
         <nav class="nav">
-            <div class="logo">RAFVAC Solutions</div>
+            <div class="logo">        
+            <span class="letter letter-r">R</span><span class="letter letter-a1">A</span><span class="letter letter-f">F</span><span class="letter letter-v">V</span><span class="letter letter-a2">A</span><span class="letter letter-c">C</span> Solutions
+</div>
+            
             <div class="nav-toggle">
                 <span></span>
                 <span></span>
