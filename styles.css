@@ -68,6 +68,11 @@ nav.scrolled {
     padding: 0 2rem;
 }
 
+a { 
+    text-decoration: none;
+    color: white;
+}
+
 /* Original RAFVAC Logo Colors */
 .logo {
     font-size: 1.8rem;
