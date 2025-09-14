@@ -208,7 +208,7 @@ a {
 .feature-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, var(--orange) 0%, var(--red) 100%);
+    background: var(--orange);
     border-radius: 12px;
     display: flex;
     align-items: center;
