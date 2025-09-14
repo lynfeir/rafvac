@@ -517,6 +517,16 @@ a {
     margin-right: 1.5rem;
     min-width: 100px;
 }
+.benefit-amount-twok {
+    font-size: 2.2rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--success) 0%, var(--blue) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-right: 1rem;
+    min-width: 100px;
+}
 
 .benefit-details h4 {
     color: var(--gray-900);
