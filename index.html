@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAFVAC Solutions - Premier HVAC Services | Central PA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-circle"></div>
+    </div>
+
+    <!-- Particle Background Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="letter-r">R</span>
+                <span class="letter-a1">A</span>
+                <span class="letter-f">F</span>
+                <span class="letter-v">V</span>
+                <span class="letter-a2">A</span>
+                <span class="letter-c">C</span>
+                <span class="solutions">Solutions</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#cleaning">Cleaning</a></li>
+                <li><a href="#tax">Tax Credits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Tech Grid Background -->
+    <div class="tech-grid">
+        <div class="tech-line" style="left: 10%;"></div>
+        <div class="tech-line" style="left: 30%;"></div>
+        <div class="tech-line" style="left: 50%;"></div>
+        <div class="tech-line" style="left: 70%;"></div>
+        <div class="tech-line" style="left: 90%;"></div>
+        <div class="tech-line" style="top: 20%;"></div>
+        <div class="tech-line" style="top: 40%;"></div>
+        <div class="tech-line" style="top: 60%;"></div>
+        <div class="tech-line" style="top: 80%;"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-3d-container">
+            <div class="hero-content">
+                <h1>Reliable HVAC Excellence</h1>
+                <p class="hero-tagline">Premier Climate Control Solutions for Central Pennsylvania</p>
+                <a href="#contact" class="cta-button">Get Your Free Quote Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="section-title reveal">Our Premium Services</h2>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <span class="service-icon">🛠️</span>
+                <h3>Preventative Maintenance</h3>
+                <p>Maximize system longevity and efficiency with our comprehensive maintenance programs</p>
+                <ul>
+                    <li>Oil/Gas/Propane Furnaces & Boilers</li>
+                    <li>AC & Heat Pumps</li>
+                    <li>Walk-in Coolers/Freezers</li>
+                    <li>Ice-makers</li>
+                    <li>Mini Splits</li>
+                    <li>Water Heaters</li>
+                </ul>
+            </div>
+            
+            <div class="service-card reveal">
+                <span class="service-icon">🔧</span>
+                <h3>Expert HVAC Repair</h3>
+                <p>24/7 emergency repair services with certified technicians for all major brands</p>
+                <ul>
+                    <li>Same-day emergency service</li>
+                    <li>All major brands serviced</li>
+                    <li>EPA certified technicians</li>
+                    <li>Transparent flat-rate pricing</li>
+                    <li>Comprehensive diagnostics</li>
+                </ul>
+            </div>
+            
+            <div class="service-card reveal">
+                <span class="service-icon">📦</span>
+                <h3>System Installations</h3>
+                <p>Energy-efficient system upgrades that slash utility costs and improve comfort</p>
+                <ul>
+                    <li>High-efficiency equipment</li>
+                    <li>Smart thermostat integration</li>
+                    <li>Ductless mini-split systems</li>
+                    <li>Comprehensive warranties</li>
+                    <li>Financing options available</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cleaning Section -->
+    <section class="cleaning-section" id="cleaning">
+        <h2 class="section-title reveal">Professional Cleaning & Inspection</h2>
+        <div class="cleaning-card reveal">
+            <span class="service-icon">✨</span>
+            <h3 style="color: #00d4ff; font-size: 2rem; margin-bottom: 2rem;">Comprehensive System Cleaning</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                <div style="background: rgba(0,212,255,0.1); padding: 1.5rem; border-radius: 15px; border: 1px solid rgba(0,212,255,0.3);">
+                    <h4 style="color: #fff; margin-bottom: 1rem;">Deep Cleaning Services</h4>
+                    <ul style="list-style: none; color: rgba(255,255,255,0.8);">
+                        <li style="padding: 0.5rem 0;">✓ Furnace/AC Deep Clean</li>
+                        <li style="padding: 0.5rem 0;">✓ Water Heater Flushing</li>
+                        <li style="padding: 0.5rem 0;">✓ Kitchen Exhaust Hoods</li>
+                    </ul>
+                </div>
+                <div style="background: rgba(255,107,53,0.1); padding: 1.5rem; border-radius: 15px; border: 1px solid rgba(255,107,53,0.3);">
+                    <h4 style="color: #fff; margin-bottom: 1rem;">Bundle & Save</h4>
+                    <ul style="list-style: none; color: rgba(255,255,255,0.8);">
+                        <li style="padding: 0.5rem 0;">💰 Multi-system discounts</li>
+                        <li style="padding: 0.5rem 0;">💰 Repair bundle deals</li>
+                        <li style="padding: 0.5rem 0;">💰 Installation packages</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1.2rem; margin-bottom: 2rem;">Pricing varies by distance and complexity - Call for your custom quote!</p>
+            <a href="tel:8145406634" class="cta-button">📞 Call Now for Pricing</a>
+        </div>
+    </section>
+
+    <!-- Special Promotion -->
+    <section class="promotion">
+        <div class="promotion-content">
+            <h2>🎉 LIMITED TIME MEGA SAVINGS!</h2>
+            <p class="promotion-text">Install a Mini-Split Before December 2025</p>
+            <div class="promotion-highlight">
+                <p style="color: white; font-size: 1.8rem; font-weight: bold; margin: 0;">
+                    GET $2,000 BACK on Tax Returns<br>
+                    + SAVE UP TO $3,000 on Annual Fuel Costs!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tax Section -->
+    <section class="tax-section" id="tax">
+        <h2 class="section-title reveal">Maximize Your Tax Credits</h2>
+        <div class="tax-content">
+            <div class="tax-info reveal">
+                <h3>IRS 25C Energy Efficient Home Tax Credit</h3>
+                <p>Take advantage of substantial federal tax credits for qualifying energy-efficient home improvements. We handle all the documentation to ensure you get every dollar you deserve!</p>
+                <p style="color: #ff6b35; font-weight: bold; font-size: 1.3rem;">⏰ Don't wait - Credits have deadlines!</p>
+                <p>Our team will guide you through the entire process, from equipment selection to tax documentation, ensuring you maximize your savings.</p>
+            </div>
+            <div class="tax-benefits reveal">
+                <div class="benefit-item">
+                    <span class="benefit-amount">$2,000</span>
+                    <div>
+                        <strong style="color: #fff; font-size: 1.3rem;">Mini-Split Systems</strong>
+                        <p style="color: rgba(255,255,255,0.7); margin: 0.5rem 0;">Maximum credit for qualifying ductless systems</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <span class="benefit-amount">$600</span>
+                    <div>
+                        <strong style="color: #fff; font-size: 1.3rem;">Water Heaters</strong>
+                        <p style="color: rgba(255,255,255,0.7); margin: 0.5rem 0;">High-efficiency water heater installations</p>
+                    </div>
+                </div>
+                <div class="benefit-item" style="border: none;">
+                    <span class="benefit-amount">30%</span>
+                    <div>
+                        <strong style="color: #fff; font-size: 1.3rem;">Home Improvements</strong>
+                        <p style="color: rgba(255,255,255,0.7); margin: 0.5rem 0;">Windows, doors, insulation & more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 4rem;">
+            <a href="#contact" class="cta-button">Start Saving Today!</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title" style="color: white;">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info reveal">
+                <span class="contact-icon">📞</span>
+                <div>
+                    <strong style="font-size: 1.2rem;">24/7 Hotline</strong>
+                    <p style="font-size: 1.4rem; margin: 0.5rem 0;">(814) 540-6634</p>
+                </div>
+            </div>
+            <div class="contact-info reveal">
+                <span class="contact-icon">✉️</span>
+                <div>
+                    <strong style="font-size: 1.2rem;">Email Us</strong>
+                    <p style="font-size: 1.1rem; margin: 0.5rem 0;">rafvacsolutions@gmail.com</p>
+                </div>
+            </div>
+            <div class="contact-info reveal">
+                <span class="contact-icon">🌐</span>
+                <div>
+                    <strong style="font-size: 1.2rem;">Online</strong>
+                    <p style="font-size: 1.1rem; margin: 0.5rem 0;">rafvacsolutions.com</p>
+                </div>
+            </div>
+            <div class="contact-info reveal">
+                <span class="contact-icon">📱</span>
+                <div>
+                    <strong style="font-size: 1.2rem;">Follow Us</strong>
+                    <p style="font-size: 1.1rem; margin: 0.5rem 0;">@RAFVAC Solutions</p>
+                </div>
+            </div>
+        </div>
+        <div class="quick-actions">
+            <a href="tel:8145406634" class="action-btn">
+                <span>📞</span> Call Now
+            </a>
+            <a href="mailto:rafvacsolutions@gmail.com" class="action-btn">
+                <span>💬</span> Request Quote
+            </a>
+            <a href="#services" class="action-btn">
+                <span>📅</span> Schedule Service
+            </a>
+            <a href="#tax" class="action-btn">
+                <span>💰</span> Calculate Savings
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 RAFVAC Solutions. All Rights Reserved. | Proudly Serving Greater Central PA</p>
+        <p style="margin-top: 1rem; color: rgba(255,255,255,0.6);">Licensed & Insured | EPA Certified | BBB Accredited</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
