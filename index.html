@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RAFVAC Solutions - Premier HVAC Services | Central PA</title>
+    <meta name="description" content="Professional HVAC services for Central Pennsylvania. 25+ years experience in maintenance, repair, and installation. EPA certified. 24/7 emergency service. Call (814) 540-6634.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">
-                <span class="letter-r">R</span>
-                <span class="letter-a1">A</span>
-                <span class="letter-f">F</span>
-                <span class="letter-v">V</span>
-                <span class="letter-a2">A</span>
-                <span class="letter-c">C</span>
+            <a href="#home" class="logo">
+                <span class="letter-r">R</span><span class="letter-a1">A</span><span class="letter-f">F</span><span class="letter-v">V</span><span class="letter-a2">A</span><span class="letter-c">C</span>
                 <span class="solutions">Solutions</span>
             </a>
             <ul class="nav-links" id="navLinks">
@@ -28,8 +28,12 @@
                 <li><a href="#cleaning">Cleaning</a></li>
                 <li><a href="#tax">Tax Credits</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="tel:8145406634" class="nav-cta">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    (814) 540-6634
+                </a></li>
             </ul>
-            <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu" id="mobileMenu" tabindex="0" role="button" aria-label="Toggle navigation menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -37,248 +41,317 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ===== HERO ===== -->
     <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Professional HVAC Excellence</h1>
-            <p class="hero-tagline">Premier climate control solutions for Central Pennsylvania homes and businesses</p>
-            <a href="#contact" class="cta-button">Get Your Free Estimate</a>
+        <div class="hero-bg">
+            <div class="hero-image" style="background-image:url('https://images.unsplash.com/photo-1558358235-a0a93f68a52c?w=1920&q=80&fit=crop')"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-grid-overlay"></div>
+            <div class="hero-glow hero-glow--warm"></div>
+            <div class="hero-glow hero-glow--cool"></div>
         </div>
-        <div class="hero-features">
-            <div class="feature-item">
-                <div class="feature-icon">🏆</div>
-                <div class="feature-text">
-                    <h3>25+ Years Experience</h3>
-                    <p>Trusted HVAC professionals</p>
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <div class="hero-eyebrow">
+                    <span class="eyebrow-line"></span>
+                    <span class="eyebrow-text">Central PA's Trusted HVAC Experts</span>
+                </div>
+                <h1>Industrial-Grade<br><span class="hero-accent">Climate Control</span></h1>
+                <p class="hero-sub">25+ years of precision HVAC service for homes and businesses across Central Pennsylvania. Licensed, insured, EPA certified.</p>
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        Get Free Estimate
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="tel:8145406634" class="btn btn-ghost btn-lg">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        24/7 Emergency
+                    </a>
                 </div>
             </div>
-            <div class="feature-item">
-                <div class="feature-icon">⚡</div>
-                <div class="feature-text">
-                    <h3>24/7 Emergency Service</h3>
-                    <p>Always here when you need us</p>
+            <!-- Stats Bar -->
+            <div class="hero-stats reveal-up">
+                <div class="stat-card">
+                    <div class="stat-number">25<span class="stat-plus">+</span></div>
+                    <div class="stat-label">Years Experience</div>
                 </div>
-            </div>
-            <div class="feature-item">
-                <div class="feature-icon">✓</div>
-                <div class="feature-text">
-                    <h3>Licensed & Insured</h3>
-                    <p>EPA certified technicians</p>
+                <div class="stat-divider"></div>
+                <div class="stat-card">
+                    <div class="stat-number">24<span class="stat-plus">/7</span></div>
+                    <div class="stat-label">Emergency Service</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-card">
+                    <div class="stat-number">EPA</div>
+                    <div class="stat-label">Certified Techs</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- ===== SERVICES ===== -->
     <section class="services" id="services">
+        <div class="section-slash section-slash--top"></div>
         <div class="container">
-            <h2 class="section-title reveal">Our Professional Services</h2>
+            <div class="section-header reveal-up">
+                <span class="section-tag">What We Do</span>
+                <h2>Built to Perform.<br>Engineered to Last.</h2>
+                <p class="section-sub">Full-spectrum HVAC services backed by decades of hands-on expertise and genuine care for your comfort.</p>
+            </div>
             <div class="services-grid">
-                <div class="service-card reveal">
-                    <div class="service-header">
-                        <div class="service-icon">🔧</div>
-                        <h3>Preventative Maintenance</h3>
+                <!-- Maintenance -->
+                <div class="service-card reveal-up delay-1">
+                    <div class="card-top-bar"></div>
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
                     </div>
-                    <p class="service-description">Comprehensive maintenance programs to maximize system efficiency and prevent costly breakdowns</p>
-                    <ul class="service-list">
-                        <li>Oil/Gas/Propane Furnaces & Boilers</li>
-                        <li>AC & Heat Pumps</li>
-                        <li>Walk-in Coolers/Freezers</li>
-                        <li>Ice-makers & Commercial Equipment</li>
+                    <h3>Preventative Maintenance</h3>
+                    <p>Comprehensive programs to maximize efficiency and prevent costly breakdowns before they happen.</p>
+                    <ul class="check-list">
+                        <li>Oil / Gas / Propane Furnaces &amp; Boilers</li>
+                        <li>AC &amp; Heat Pumps</li>
+                        <li>Walk-in Coolers / Freezers</li>
+                        <li>Ice-makers &amp; Commercial Equipment</li>
                         <li>Mini Split Systems</li>
-                        <li>Water Heaters</li>
                     </ul>
+                    <a href="#contact" class="card-cta">Schedule Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                 </div>
 
-                <div class="service-card reveal">
-                    <div class="service-header">
-                        <div class="service-icon">⚡</div>
-                        <h3>Expert HVAC Repair</h3>
+                <!-- Repair — Featured -->
+                <div class="service-card service-card--featured reveal-up delay-2">
+                    <div class="card-top-bar"></div>
+                    <span class="featured-tag">Most Requested</span>
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
                     </div>
-                    <p class="service-description">Fast, reliable repair services with transparent pricing and certified technicians</p>
-                    <ul class="service-list">
+                    <h3>Expert HVAC Repair</h3>
+                    <p>Fast, reliable repair services with transparent pricing and EPA certified technicians.</p>
+                    <ul class="check-list">
                         <li>Same-day emergency service</li>
                         <li>All major brands serviced</li>
-                        <li>EPA certified technicians</li>
                         <li>Transparent flat-rate pricing</li>
                         <li>Comprehensive diagnostics</li>
+                        <li>Water Heaters</li>
                     </ul>
+                    <a href="tel:8145406634" class="card-cta">Call Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                 </div>
 
-                <div class="service-card reveal">
-                    <div class="service-header">
-                        <div class="service-icon">📦</div>
-                        <h3>System Installations</h3>
+                <!-- Installation -->
+                <div class="service-card reveal-up delay-3">
+                    <div class="card-top-bar"></div>
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01M8 12h.01M16 12h.01"/></svg>
                     </div>
-                    <p class="service-description">Professional installation of energy-efficient systems that reduce costs and improve comfort</p>
-                    <ul class="service-list">
+                    <h3>System Installations</h3>
+                    <p>Professional installation of energy-efficient systems that reduce costs and improve comfort.</p>
+                    <ul class="check-list">
                         <li>High-efficiency equipment</li>
                         <li>Smart thermostat integration</li>
                         <li>Ductless mini-split systems</li>
                         <li>Comprehensive warranties</li>
                         <li>Financing options available</li>
                     </ul>
+                    <a href="#contact" class="card-cta">Get a Quote <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Cleaning Section -->
-    <section class="cleaning-section" id="cleaning">
+    <!-- ===== CLEANING ===== -->
+    <section class="cleaning" id="cleaning">
         <div class="container">
-            <h2 class="section-title reveal">Professional Cleaning & Inspection</h2>
-            <div class="cleaning-card reveal">
-                <div class="cleaning-header">
-                    <div class="service-icon">✨</div>
-                    <h3>Comprehensive System Cleaning</h3>
-                </div>
-                <div class="cleaning-services">
-                    <div class="cleaning-category">
-                        <h4>Deep Cleaning Services</h4>
-                        <ul>
-                            <li>Furnace/AC Deep Clean</li>
-                            <li>Water Heater Flushing</li>
-                            <li>Kitchen Exhaust Hoods</li>
-                            <li>Ductwork Cleaning</li>
-                        </ul>
-                    </div>
-                    <div class="cleaning-category">
-                        <h4>Bundle & Save Options</h4>
-                        <ul>
-                            <li>Multi-system discounts</li>
-                            <li>Repair bundle deals</li>
-                            <li>Installation packages</li>
-                            <li>Annual maintenance plans</li>
-                        </ul>
-                    </div>
-                </div>
-                <p class="cleaning-note">Pricing varies by distance and system complexity. Contact us for your personalized quote.</p>
-                <a href="tel:8145406634" class="cta-button">Call Now for Pricing: (814) 540-6634</a>
+            <div class="section-header reveal-up">
+                <span class="section-tag">Deep Clean</span>
+                <h2>Professional Cleaning<br>&amp; Inspection</h2>
             </div>
-        </div>
-    </section>
-
-    <!-- Special Promotion -->
-    <section class="promotion">
-        <div class="container">
-            <div class="promotion-content">
-                <h2>Limited Time Tax Credit Opportunity</h2>
-                <p class="promotion-text">Install a Mini-Split System Before December 2025</p>
-                <div class="promotion-benefits">
-                    <div class="benefit">
-                        <h3>$2,000</h3>
-                        <p>Federal Tax Credit</p>
+            <div class="cleaning-grid">
+                <!-- Hero Card with Image -->
+                <div class="cleaning-hero-card reveal-up">
+                    <img class="cleaning-img" src="https://images.unsplash.com/photo-1720036236632-fdb6211cf317?w=800&q=80&fit=crop" alt="Industrial HVAC ductwork and metal piping" loading="lazy">
+                    <div class="cleaning-hero-content">
+                        <div class="chc-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5.5 6.5l13 11M18.5 6.5l-13 11"/></svg>
+                        </div>
+                        <h3>Comprehensive System Cleaning</h3>
+                        <p>Extend the life of your equipment and improve air quality with our thorough cleaning and inspection services.</p>
+                        <a href="tel:8145406634" class="btn btn-primary">Call for Pricing: (814) 540-6634</a>
                     </div>
-                    <div class="benefit-plus">+</div>
-                    <div class="benefit">
-                        <h3>$3,000</h3>
-                        <p>Annual Energy Savings</p>
-                    </div>
+                </div>
+                <!-- Service Lists -->
+                <div class="cleaning-list-card reveal-up delay-1">
+                    <h4>Deep Cleaning Services</h4>
+                    <ul class="check-list">
+                        <li>Furnace / AC Deep Clean</li>
+                        <li>Water Heater Flushing</li>
+                        <li>Kitchen Exhaust Hoods</li>
+                        <li>Ductwork Cleaning</li>
+                    </ul>
+                </div>
+                <div class="cleaning-list-card reveal-up delay-2">
+                    <h4>Bundle &amp; Save Options</h4>
+                    <ul class="check-list">
+                        <li>Multi-system discounts</li>
+                        <li>Repair bundle deals</li>
+                        <li>Installation packages</li>
+                        <li>Annual maintenance plans</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Tax Section -->
-    <section class="tax-section" id="tax">
+    <!-- ===== PROMO BANNER ===== -->
+    <section class="promo">
+        <div class="promo-bg">
+            <img class="promo-bg-img" src="https://images.unsplash.com/photo-1759646827242-cf09e30709aa?w=1400&q=80&fit=crop" alt="Industrial HVAC unit" loading="lazy">
+            <div class="promo-bg-overlay"></div>
+            <div class="promo-slash promo-slash--left"></div>
+            <div class="promo-slash promo-slash--right"></div>
+        </div>
+        <div class="container promo-inner">
+            <span class="promo-badge">Limited Time</span>
+            <h2>Install a Mini-Split System<br>Before December 2025</h2>
+            <div class="promo-numbers">
+                <div class="promo-num reveal-up">
+                    <span class="pn-value">$2,000</span>
+                    <span class="pn-label">Federal Tax Credit</span>
+                </div>
+                <span class="promo-plus">+</span>
+                <div class="promo-num reveal-up delay-1">
+                    <span class="pn-value">$3,000</span>
+                    <span class="pn-label">Annual Energy Savings</span>
+                </div>
+            </div>
+            <a href="#contact" class="btn btn-white btn-lg">Claim Your Savings</a>
+        </div>
+    </section>
+
+    <!-- ===== TAX CREDITS ===== -->
+    <section class="tax" id="tax">
+        <div class="section-slash section-slash--top"></div>
         <div class="container">
-            <h2 class="section-title reveal">Federal Tax Credit Benefits</h2>
-            <div class="tax-content">
-                <div class="tax-info reveal">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Save Money</span>
+                <h2>Federal Tax Credit<br>Benefits</h2>
+            </div>
+            <div class="tax-grid">
+                <div class="tax-info reveal-up">
                     <h3>IRS 25C Energy Efficient Home Tax Credit</h3>
                     <p>Take advantage of substantial federal tax credits for qualifying energy-efficient home improvements. Our team handles all documentation to ensure you receive maximum benefits.</p>
-                    <div class="tax-deadline">
-                        <strong>⏰ Important:</strong> Tax credit programs have specific deadlines and equipment requirements. Don't wait to start saving.
+                    <div class="tax-alert">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+                        <p><strong>Important:</strong> Tax credit programs have specific deadlines and equipment requirements. Don't wait — start saving now.</p>
                     </div>
                     <p>We guide you through the entire process, from equipment selection to providing proper tax documentation for maximum savings.</p>
                 </div>
-                <div class="tax-benefits reveal">
-                    <div class="benefit-item">
-                        <div class="benefit-amount">$2,000</div>
-                        <div class="benefit-amount-twok">$2,000</div>
-                        <div class="benefit-details">
+                <div class="tax-cards reveal-up delay-1">
+                    <div class="tax-card">
+                        <div class="tc-amount">$2,000</div>
+                        <div class="tc-info">
                             <h4>Mini-Split Heat Pumps</h4>
                             <p>Maximum credit for qualifying ductless systems</p>
                         </div>
                     </div>
-                    <div class="benefit-item">
-                        <div class="benefit-amount">$600</div>
-                        <div class="benefit-details">
+                    <div class="tax-card">
+                        <div class="tc-amount">$600</div>
+                        <div class="tc-info">
                             <h4>Water Heaters</h4>
                             <p>High-efficiency water heater installations</p>
                         </div>
                     </div>
-                    <div class="benefit-item">
-                        <div class="benefit-amount">30%</div>
-                        <div class="benefit-details">
+                    <div class="tax-card">
+                        <div class="tc-amount">30%</div>
+                        <div class="tc-info">
                             <h4>Home Improvements</h4>
-                            <p>Windows, doors, insulation & more</p>
+                            <p>Windows, doors, insulation &amp; more</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="tax-cta">
-                <a href="#contact" class="cta-button">Learn More About Tax Credits</a>
-            </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- ===== CONTACT ===== -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-grid">
-                <div class="contact-info reveal">
-                    <div class="contact-icon">📞</div>
-                    <div class="contact-details">
-                        <h3>24/7 Emergency Hotline</h3>
-                        <p class="contact-value">(814) 540-6634</p>
+            <div class="section-header reveal-up">
+                <span class="section-tag">Reach Out</span>
+                <h2>Ready When<br>You Are</h2>
+                <p class="section-sub">24/7 emergency service. Free estimates. No-hassle scheduling.</p>
+            </div>
+            <div class="contact-cards">
+                <a href="tel:8145406634" class="contact-card reveal-up delay-1">
+                    <div class="cc-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
                     </div>
+                    <h3>24/7 Hotline</h3>
+                    <p>(814) 540-6634</p>
+                </a>
+                <a href="mailto:rafvacsolutions@gmail.com" class="contact-card reveal-up delay-2">
+                    <div class="cc-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p>rafvacsolutions@gmail.com</p>
+                </a>
+                <div class="contact-card reveal-up delay-3">
+                    <div class="cc-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                    </div>
+                    <h3>Website</h3>
+                    <p>rafvacsolutions.com</p>
                 </div>
-                <div class="contact-info reveal">
-                    <div class="contact-icon">✉️</div>
-                    <div class="contact-details">
-                        <h3>Email Us</h3>
-                        <p class="contact-value">rafvacsolutions@gmail.com</p>
+                <div class="contact-card reveal-up delay-4">
+                    <div class="cc-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
                     </div>
-                </div>
-                <div class="contact-info reveal">
-                    <div class="contact-icon">🌐</div>
-                    <div class="contact-details">
-                        <h3>Website</h3>
-                        <p class="contact-value">rafvacsolutions.com</p>
-                    </div>
-                </div>
-                <div class="contact-info reveal">
-                    <div class="contact-icon">📍</div>
-                    <div class="contact-details">
-                        <h3>Service Area</h3>
-                        <p class="contact-value">Greater Central PA</p>
-                    </div>
+                    <h3>Service Area</h3>
+                    <p>Greater Central PA</p>
                 </div>
             </div>
-            <div class="quick-actions">
-                <a href="tel:8145406634" class="action-btn primary">
-                    <span class="btn-icon">📞</span> Call Now
+            <div class="contact-actions">
+                <a href="tel:8145406634" class="btn btn-primary btn-lg">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    Call Now
                 </a>
-                <a href="mailto:rafvacsolutions@gmail.com" class="action-btn">
-                    <span class="btn-icon">💬</span> Request Quote
-                </a>
-                <a href="#services" class="action-btn">
-                    <span class="btn-icon">📅</span> Schedule Service
-                </a>
-                <a href="#tax" class="action-btn">
-                    <span class="btn-icon">💰</span> Calculate Savings
+                <a href="mailto:rafvacsolutions@gmail.com" class="btn btn-ghost btn-lg">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
+                    Request Quote
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ===== FOOTER ===== -->
     <footer>
+        <div class="footer-slash"></div>
         <div class="container">
-            <p>&copy; 2025 RAFVAC Solutions. All Rights Reserved.</p>
-            <p class="footer-credentials">Licensed & Insured | EPA Certified | Proudly Serving Greater Central PA</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo logo-sm">
+                        <span class="letter-r">R</span><span class="letter-a1">A</span><span class="letter-f">F</span><span class="letter-v">V</span><span class="letter-a2">A</span><span class="letter-c">C</span>
+                        <span class="solutions">Solutions</span>
+                    </a>
+                    <p>Professional HVAC services for Central Pennsylvania homes and businesses.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <a href="#services">Services</a>
+                    <a href="#cleaning">Cleaning</a>
+                    <a href="#tax">Tax Credits</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <a href="tel:8145406634">(814) 540-6634</a>
+                    <a href="mailto:rafvacsolutions@gmail.com">rafvacsolutions@gmail.com</a>
+                    <span>Greater Central PA</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RAFVAC Solutions. All Rights Reserved.</p>
+                <p>Licensed &amp; Insured &middot; EPA Certified &middot; Proudly Serving Greater Central PA</p>
+            </div>
         </div>
     </footer>
 
