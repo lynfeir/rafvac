@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:rafvacsolutions.com)",
+      "Bash(dir /s \"C:\\\\Users\\\\lynfe\\\\rafvac\")",
+      "Bash(dir:*)",
+      "Bash(git config:*)"
+    ]
+  }
+}
